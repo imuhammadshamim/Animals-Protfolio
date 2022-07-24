@@ -1,4 +1,4 @@
-# Animal Collective - A Website
+# Animal Website
 
 ## General info
 This project contains website of the nonexistent pro-animals organization made entirely with HTML, CSS and JS, without any extra tools. I wanted it to look both minimalistic and kind of cool, so I have decided to add some color to basic light/dark palette. 
