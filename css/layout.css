@@ -1,0 +1,65 @@
+.main-container {
+    width: 90vw;
+    max-width: 1100px;
+    margin: var(--gutter-big) auto var(--gutter);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--gutter-big) auto;
+    z-index: 3;
+}
+
+.main {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sec-about, .sec-team {
+    margin-top: 100px;
+}
+
+.sec-team {
+    height: 80vh;
+}
+
+.contact-sec {
+    min-height: 50vh;
+    background-color: var(--font-color);
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        margin: 100px auto var(--gutter-big);
+    }
+    .sec-about, .sec-team {
+        margin-top: 50px;
+    }
+    .sec-team {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .sec-about, .sec-team {
+        margin-top: 40px;
+    }
+    .sec-team {
+        height: auto;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

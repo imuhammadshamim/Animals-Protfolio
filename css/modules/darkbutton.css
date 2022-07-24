@@ -1,0 +1,45 @@
+.dark-mode-container {
+    position: absolute;
+    right: 2vw;
+    top: 2vh;
+    width: 50px;
+    padding: 5px 0 3px;
+    border: 4px double var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.dark-mode-container:hover {
+    background-color: var(--half-transparent);
+}
+.toggle-mode-p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+}
+.toggle-mode {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.clicked {
+    text-shadow: 
+        0 0 20px rgb(255, 255, 75),
+        0 0 10px rgb(255, 255, 0), 
+        0 0 15px rgb(255, 255, 0),
+        0 0 15px rgb(240, 240, 0);
+}
+
+@media only screen and (max-width: 650px) {
+    .toggle-mode {
+        width: 45px;
+        
+    }
+    .toggle-mode p {
+        font-size: 10px;
+        line-height: 11px;
+    }
+}
